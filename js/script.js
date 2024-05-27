@@ -137,7 +137,7 @@ function addBook() {
     const author = document.getElementById('input-author').value;
     const year = document.getElementById('input-year').value;
     const isCompleted = document.getElementById('input-is-complete').checked;
-
+``
     if (!title || !author || !year) {
         alert('Harap isi semua field');
         return;
