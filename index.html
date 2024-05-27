@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBOOKSHELF APPS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="add-book">
+            <h1 class="logo">MyBOOKSHELF <span>APPS</span></h1>
+            <div class="motto">
+                <strong>Your Ideal Bookshelf</strong>
+                <p>Organize, Manage, Enjoy</p>
+            </div>
+            <form class="form-add" id="form-add-book">
+                <input type="text" placeholder="Title" id="input-title" required>
+                <input type="text" placeholder="Author" id="input-author" required>
+                <input type="number" placeholder="Year" id="input-year" required>
+                <div>
+                    <label for="input-is-complete">Finished Reading? </label>
+                    <input type="checkbox" id="input-is-complete">
+                </div>
+                <button type="submit">ADD BOOK</button>
+            </form>
+            <p class="credit">&copy; 2024 Muhammad Kahfy Noor Alwani</p>
+        </section>
+        <section class="bookshelf">
+            <div class="search-box">
+                <h3>Search Book</h3>
+                <form class="form-search" id="search-book">
+                    <input type="text" placeholder="Title" id="search-book-title">
+                    <button type="submit" id="search-submit">Search</button>
+                </form>
+            </div>
+            <div class="bookshelfList">
+                <div class="listBook">
+                    <h3>Not finished reading</h3>
+                    <div class="book-list-item" id="unreadedBook">
+
+                    </div>
+                </div>
+                <div class="listBook">
+                    <h3>Finished reading</h3>
+                    <div class="book-list-item" id="readedBook">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
